@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
-
-axios.defaults.baseURL = "http://ktaskapi.test/api/";
+import {REACT_APP_API_BASE_URL} from './config';
+axios.defaults.baseURL = REACT_APP_API_BASE_URL;
 
 ReactDOM.render(
   <React.StrictMode>
